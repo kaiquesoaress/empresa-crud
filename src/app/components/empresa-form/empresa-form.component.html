@@ -1,0 +1,24 @@
+<h2 *ngIf="!isEditMode" class="form-title">Adicionar Empresa</h2>
+<h2 *ngIf="isEditMode" class="form-title">Editar Empresa</h2>
+
+<form (ngSubmit)="onSubmit()" class="empresa-form">
+  <label for="razao_social">Razão Social:</label>
+  <input [(ngModel)]="empresa.razao_social" name="razao_social" id="razao_social" required />
+
+  <label for="cnpj">CNPJ:</label>
+  <input [(ngModel)]="empresa.cnpj" name="cnpj" id="cnpj" required />
+
+  <label for="endereco">Endereço:</label>
+  <input [(ngModel)]="empresa.endereco" name="endereco" id="endereco" />
+
+  <label for="email">Email:</label>
+  <input [(ngModel)]="empresa.email" name="email" id="email" />
+
+  <label for="telefone">Telefone:</label>
+  <input [(ngModel)]="empresa.telefone" name="telefone" id="telefone" />
+
+  <label for="celular">Celular:</label>
+  <input [(ngModel)]="empresa.celular" name="celular" id="celular" />
+
+  <button type="submit" class="btn-salvar">Salvar</button>
+</form>

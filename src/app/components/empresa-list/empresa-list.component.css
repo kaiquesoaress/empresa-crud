@@ -1,0 +1,45 @@
+/* Título da página */
+.titulo {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Tabela */
+.empresa-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  padding: 8px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+.table-cell {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Estilos dos botões */
+.btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+}
+
+.detalhes {
+  background-color: #4CAF50;
+}
+
+.editar {
+  background-color: #FFA500;
+}
+
+.deletar {
+  background-color: #f44336;
+}

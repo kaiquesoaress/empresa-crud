@@ -1,0 +1,21 @@
+<h2 class="titulo">Lista de Empresas</h2>
+<table class="empresa-table">
+  <thead>
+    <tr>
+      <th class="table-header">Razão Social</th>
+      <th class="table-header">CNPJ</th>
+      <th class="table-header">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let empresa of empresas">
+      <td class="table-cell">{{ empresa.razao_social }}</td>
+      <td class="table-cell">{{ empresa.cnpj }}</td>
+      <td class="table-cell">
+        <button [routerLink]="['/empresas', empresa.id]" class="btn detalhes">Detalhes</button>
+        <button [routerLink]="['/empresas', empresa.id, 'edit']" class="btn editar">Editar</button>
+        <button (click)="deleteEmpresa(empresa.id!)" class="btn deletar">Deletar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

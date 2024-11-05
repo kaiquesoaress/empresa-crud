@@ -1,0 +1,30 @@
+/* Container de detalhes da empresa */
+.empresa-detalhes {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Nome da empresa */
+.empresa-nome {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Informações da empresa */
+.empresa-info {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.empresa-info strong {
+  color: #333;
+}
